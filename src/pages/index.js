@@ -17,6 +17,7 @@ const MainContainer = styled.div`
 `
 
 const Logo = styled.img`
+  width: 80%;
   max-width: 420px;
 `
 

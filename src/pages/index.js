@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LogoCyanWhite from "../images/cyan_white.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons"
 
 const MainContainer = styled.div`
   background-color: #0a192f;
@@ -54,20 +54,25 @@ const UnderConstruction = styled.h2`
 
 const Socials = styled.div`
   margin-top: 1rem;
+  display: flex;
+  gap: 10px;
 `
 
 const IndexPage = () => (
   <Layout>
     <SEO title="En construcción" />
     <MainContainer>
-      <UnderConstruction>
+      {/* <UnderConstruction>
         Sitio en <br /> construcción
-      </UnderConstruction>
+      </UnderConstruction> */}
       <Logo src={LogoCyanWhite} />
       <Skills>
-        <li>Joezer Gullo</li>
         <li>
-          FullStack Developer @{" "}
+          Joezer Gullo <br /> 🇻🇪 @ 🇨🇴
+        </li>
+        <li>
+          FullStack Dev
+          <br /> @
           <a
             href="https://www.instagram.com/sonartelematicslatam/"
             target="_blank"
@@ -75,11 +80,14 @@ const IndexPage = () => (
             SonarTelematics
           </a>
         </li>
-        {/* <li>Músico</li> */}
+        <li>Músico 🥁</li>
       </Skills>
       <Socials>
         <a href="https://www.instagram.com/joezerg/" target="_blank">
           <FontAwesomeIcon size="2x" color="white" icon={faInstagram} />
+        </a>
+        <a href="https://www.youtube.com/joezergullo" target="_blank">
+          <FontAwesomeIcon size="2x" color="white" icon={faYoutube} />
         </a>
       </Socials>
     </MainContainer>

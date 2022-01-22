@@ -18,13 +18,13 @@ const MainContainer = styled.div`
 
 const Logo = styled.img`
   width: 80%;
-  max-width: 420px;
+  max-width: 560px;
 `
 
 const Skills = styled.ul`
   width: 100%;
-  max-width: 220px;
-  list-style: none;
+  max-width: 280px;
+  list-style: circle;
   display: flex;
   flex-direction: column;
 
@@ -42,33 +42,39 @@ const Skills = styled.ul`
 
     &:first-child {
       font-weight: 400;
+      list-style: none;
     }
   }
-`
-
-const UnderConstruction = styled.h2`
-  color: white;
-  font-weight: 700;
-  font-size: 2rem;
 `
 
 const Socials = styled.div`
   margin-top: 1rem;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  h3 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  > div {
+    display: flex;
+    gap: 10px;
+  }
 `
 
 const IndexPage = () => (
   <Layout>
     <SEO title="En construcción" />
     <MainContainer>
-      {/* <UnderConstruction>
-        Sitio en <br /> construcción
-      </UnderConstruction> */}
       <Logo src={LogoCyanWhite} />
       <Skills>
         <li>
-          Joezer Gullo <br /> 🇻🇪 @ 🇨🇴
+          Hi, i'm Joezer Gullo <br /> 🇻🇪 @ 🇨🇴
+        </li>
+        <li>
+          co-founder <br /> @
+          <a href="https://www.instagram.com/muufapp/" target="_blank">
+            muufapp
+          </a>
         </li>
         <li>
           FullStack Dev
@@ -80,15 +86,18 @@ const IndexPage = () => (
             SonarTelematics
           </a>
         </li>
-        <li>Músico 🥁</li>
+        <li>Musician 🥁 </li>
       </Skills>
       <Socials>
-        <a href="https://www.instagram.com/joezerg/" target="_blank">
-          <FontAwesomeIcon size="2x" color="white" icon={faInstagram} />
-        </a>
-        <a href="https://www.youtube.com/joezergullo" target="_blank">
-          <FontAwesomeIcon size="2x" color="white" icon={faYoutube} />
-        </a>
+        <h3>Meet me at</h3>
+        <div>
+          <a href="https://www.instagram.com/joezerg/" target="_blank">
+            <FontAwesomeIcon size="3x" color="white" icon={faInstagram} />
+          </a>
+          <a href="https://www.youtube.com/joezergullo" target="_blank">
+            <FontAwesomeIcon size="3x" color="white" icon={faYoutube} />
+          </a>
+        </div>
       </Socials>
     </MainContainer>
   </Layout>

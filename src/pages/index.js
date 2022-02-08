@@ -17,8 +17,8 @@ const MainContainer = styled.div`
 `
 
 const Logo = styled.img`
-  width: 80%;
-  max-width: 560px;
+  max-height: 280px;
+  margin-bottom: 2rem;
 `
 
 const Skills = styled.ul`
@@ -68,7 +68,7 @@ const IndexPage = () => (
       <Logo src={LogoCyanWhite} />
       <Skills>
         <li>
-          Hi, i'm Joezer Gullo <br /> 🇻🇪 @ 🇨🇴
+          Hi, i'm Joezer Gullo <br /> 🇻🇪 living @ 🇨🇴
         </li>
         <li>
           co-founder <br /> @

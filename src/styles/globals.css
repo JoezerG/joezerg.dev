@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary-dark: #141e30;
+  --color-text-accent: #557ec9;
+  --color-text-secondary: #5a667d;
+}
+
+body {
+  background: var(--primary-dark); /* fallback for old browsers */
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  /* scroll-snap-type: y mandatory; */
+  grid-template-columns:
+    minmax(20px, auto)
+    minmax(auto, 1200px)
+    minmax(20px, auto);
+  grid-template-rows: 60px auto 60px;
+  grid-template-areas:
+    "nav nav nav"
+    ". content ."
+    "footer footer footer";
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: content;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, auto);
+  gap: 1rem;
+}
+
+/* main > section {
+  scroll-snap-align: start;
+} */
+
+footer {
+  grid-area: footer;
+}

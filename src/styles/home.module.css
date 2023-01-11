@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+h4 {
+  font-weight: normal;
+  color: var(--color-text-accent);
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0px;
+  margin-bottom: 0.3rem;
+}
+
+h2.secondary {
+  color: var(--color-text-secondary);
+}
+
+p {
+  line-height: 1.4;
+}

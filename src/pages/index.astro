@@ -1,17 +1,14 @@
 ---
+import "../styles/globals.css";
 import Footer from "../components/Footer.astro";
 import HomeSection from "../sections/HomeSection.astro";
 import Navigation from "../components/Navigation.astro";
 import RootLayout from "../layouts/RootLayout.astro";
-import "../styles/globals.css";
-import SectionLayout from "../layouts/SectionLayout.astro";
 ---
 
 <RootLayout>
   <Navigation />
   <main>
-    <HomeSection />
-    <SectionLayout />
     <HomeSection />
   </main>
   <Footer />

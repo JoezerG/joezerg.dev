@@ -14,13 +14,20 @@
   font-display: swap;
 }
 
+:root {
+  --primary-dark: #141e30;
+  --color-text-accent: #557ec9;
+  --color-text-secondary: #5a667d;
+}
+
 body {
-  background: #141e30; /* fallback for old browsers */
+  background: var(--primary-dark); /* fallback for old browsers */
   font-family: "Roboto", sans-serif;
   color: white;
   margin: 0;
   padding: 0;
   display: grid;
+  /* scroll-snap-type: y mandatory; */
   grid-template-columns:
     minmax(20px, auto)
     minmax(auto, 1200px)
@@ -42,6 +49,10 @@ main {
   grid-template-rows: repeat(auto-fill, auto);
   gap: 1rem;
 }
+
+/* main > section {
+  scroll-snap-align: start;
+} */
 
 footer {
   grid-area: footer;
